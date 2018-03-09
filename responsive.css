@@ -1,0 +1,125 @@
+/* When width reaches to 560 about-me-subheader
+is seperated as a column */
+
+@media screen and (min-width: 560px) {
+
+.about-me-article {	
+	display: flex;
+	flex-direction: row;
+}
+
+.about-me-subheader {	
+	display: flex;
+	min-width: 30%;	
+}
+
+.who.i.am {
+	display: flex;
+	flex-basis: 100%;
+	margin: 0;
+}
+}
+
+/* 560px to 768px featured works and life style are 
+converted from column to row */
+
+@media screen and (min-width: 768px) {
+
+.featured-work-inner, .life-style-inner {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+}
+
+.life-style {
+	margin-top: 1em;
+}
+
+.projects-products, .recommendations {
+	width: 200px;
+	height: 120px;
+}
+
+}
+
+/* Changes in the placement of life style since the
+screen is wider. Header part items get bigger */
+
+@media screen and (min-width: 1000px) {
+
+.header-logo {
+	height: 60px;
+	width: 72px;		
+}	
+
+.header-title {
+	font-size: 28px;
+	font-weight: 200;
+}
+
+.content {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	justify-content: space-between;	
+}
+
+.life-style {
+	order: 0;
+	width: 15%;
+}
+
+.about-me {
+	order: 1;
+	width: 75%;
+}
+
+.featured-work {	
+	order: 3;
+	width: 75%;
+	position: relative;
+	left: 25%;	
+}
+
+.featured-work-inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.recommendations {
+	width: 128px;
+	margin-left: 1em;
+	
+}
+
+.projects-products {
+	width: 25%;
+	justify-content: flex-start;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.life-style {
+	margin-top: 0;
+	padding-right: 0;	
+}
+
+}
+
+/* The view is fixed and auto-margined */
+
+@media screen and (min-width: 1024px) {
+	
+body {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+
+
